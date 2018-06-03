@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body ng-app="">
+	<div ng-include="'header.html'"></div>
+	<div class="login-page">
+  <div class="form">
+    <form class="login-form" action="lacak2.html">
+      <select required="" style="width: 270px; margin-bottom: 10px;">
+  <option value="Gojek">Gojek</option>
+  <option value="JNE">JNE</option>
+  <option value="TIKI">TIKI</option>
+  <option value="J & T">J & T</option>
+</select>
+		<br>
+      <input type="text" placeholder="kode pengiriman" required="" id="kode" name="kode" />
+      <input type="submit" name="" value="Lacak">
+      
+    </form>
+   <br>
+  
+    
+  </div>
+
+  
+</div>
+	<div ng-include="'footer.html'"></div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/desain.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#subkomputer").hide();
+    $("#Komputer").on("click",function(){
+        $("#Komputer").hide();
+        $("#subkomputer").show();
+    });
+    $("#subkomputer").on("click",function(){
+        $("#subkomputer").hide();
+        $('#Komputer').show();
+    });
+
+    $("#subpenyimpanan").hide();
+    $("#Penyimpanan").on("click",function(){
+        $("#Penyimpanan").hide();
+        $("#subpenyimpanan").show();
+    });
+    $("#subpenyimpanan").on("click",function(){
+        $("#subpenyimpanan").hide();
+        $('#Penyimpanan').show();
+    });
+
+    $("#subaksesoris").hide();
+    $("#Aksesoris").on("click",function(){
+        $("#Aksesoris").hide();
+        $("#subaksesoris").show();
+    });
+    $("#subaksesoris").on("click",function(){
+        $("#subaksesoris").hide();
+        $('#Aksesoris').show();
+    });
+
+    $("#subsp").hide();
+    $("#sp").on("click",function(){
+        $("#sp").hide();
+        $("#subsp").show();
+    });
+    $("#subsp").on("click",function(){
+        $("#subsp").hide();
+        $('#sp').show();
+    });
+});
+</script>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      .kategori {
+        background-color: lightblue;
+        height: 150px;
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right: 20%;
+        border-radius: 15px;
+        }
+        .subkategori {
+        display: flex;
+        flex-direction: row;
+     
+        }
+      .teks {
+        margin-top: 5%;
+        width: 20%;
+      }
+      .subteks {
+        margin-top: 5%;
+        width: 15%;
+      }
+      .subtekstengah {
+       
+        padding-left: 25%;
+      }
+    </style>
+</head>
+<body ng-app="">
+ <div ng-include="'header.html'"></div>
+<div ng-include="'menu.html'"></div>
+  <div class="row">
+    <div class="kategori col-sm-8" id="Komputer">
+      <center><h1 class="teks">Komputer</h1></center>
+    </div>  
+
+    <div class="kategori col-sm-8 subkategori" id="subkomputer">
+      <div class="teks">
+        <ul>
+          <li>All in One</li>
+          <li>Build Up</li>
+          <li>Notebook Gaming</li>
+          <li>Notebook</li>
+        </ul>
+      </div>
+
+      <div class="teks">
+        <ul>
+          <li>Ultrabook</li>
+          <li>PC 2 in 1</li>
+          <li>IMAC</li>
+          <li>MACBOOK</li>
+        </ul>
+      </div>
+      <div class="teks">
+        <ul>
+          <li>CPU Intel</li>
+          <li>CPU AMD</li>
+          <li>Motherboard</li>
+          <li>RAM</li>
+        </ul>
+      </div>
+
+      <div class="teks">
+        <ul>
+          <li>VGA Nvidia</li>
+          <li>VGA AMD</li>
+          <li>Power Supply</li>
+          <li>Case</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="kategori col-sm-8" id="sp">
+      <center><h1 class="teks">Smartphone</h1></center>
+    </div>  
+
+    <div class="kategori col-sm-8 subkategori" id="subsp">
+      <div class="teks">
+        <ul>
+          <li>Apple</li>
+          <li>Asus</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </div>
+      <div class="teks">
+        <ul>
+          <li>Oppo</li>
+          <li>Smartfren</li>
+          <li>Vivo</li>
+          <li>Nokia</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="kategori col-sm-8" id="Penyimpanan">
+      <center><h1 class="teks">Penyimpanan</h1></center>
+    </div> 
+
+    <div class="kategori col-sm-8 subkategori" id="subpenyimpanan">
+      <div class="teks">
+        <ul>
+          <li>HDD 3.5 Inch</li>
+          <li>HDD 2.5 Inch</li>
+          <li>SSD SATA 3</li>
+          <li>SSD M. SATA</li>
+        </ul>
+      </div>
+      <div class="teks">
+        <ul>
+          <li>SSD NVME</li>
+          <li>Micro SD</li>
+          <li>Flash Drive</li>
+          <li>HDD Eksternal</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="kategori col-sm-8" id="Aksesoris">
+      <center><h1 class="teks" >Aksesoris</h1></center>
+    </div>   
+
+    <div class="kategori col-sm-8 subkategori" id="subaksesoris">
+      <div class="teks">
+        <ul>
+          <li>Mouse</li>
+          <li>Keyboard</li>
+          <li>Gamepad</li>
+          <li>Webcam</li>
+        </ul>
+      </div>
+      <div class="teks">
+        <ul>
+          <li>Speaker</li>
+          <li>Headphone</li>
+          <li>Kabel/Converter</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+        
+    <br>
+    <br>
+    <br>          
+<div ng-include="'footer.html'" style="margin-top:10%;">
+    
+</div>
+</body>
+</html>
